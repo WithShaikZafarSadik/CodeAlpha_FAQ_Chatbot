@@ -5,7 +5,7 @@ class ChatbotUI:
     def __init__(self, root):
         self.root = root
         self.root.title("CodeAlpha FAQ Chatbot")
-        self.root.geometry("700x700")
+        self.root.geometry("900x700")
         self.root.configure(bg="#EAF4FC")
         # Title
         self.title = tk.Label(
@@ -35,7 +35,7 @@ class ChatbotUI:
         self.user_input = tk.Entry(
             self.root,
             width=70,
-            font=("Arial", 12),
+            font=("Arial", 14),
             bd=3,
             relief="solid"
         )
@@ -103,7 +103,7 @@ class ChatbotUI:
         self.chat_area.insert(
             tk.END,
             "🤖 Bot: Hello! Welcome to the CodeAlpha FAQ Chatbot.\n"
-            "Ask me any question.\n\n"
+            "Ask me anything about CodeAlpha internships.\n\n"
         )
         self.chat_area.config(state="disabled")
 
